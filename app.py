@@ -1,3 +1,8 @@
+import pandas as pd
+import plotly.figure_factory as ff
+import plotly.graph_objects as go
+import streamlit as st
+
 from tkinter import Y
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
