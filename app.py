@@ -1,6 +1,3 @@
-import pandas as pd
-import streamlit as st
-
 from tkinter import Y
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
