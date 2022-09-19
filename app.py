@@ -43,7 +43,7 @@ st.title("物体検出App")
 uploaded_file = st.file_uploader('Please choose an image...', type={'jpg','png'})
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    img_path = f'img/{uploaded_file.name}'
+    img_path = f'C:\\Users\\Shota Uwabo\\Desktop\\python\\新しいフォルダー\\img\\{uploaded_file.name}'
     img.save(img_path)
     objects = detect_objects(img_path)
 
@@ -64,6 +64,6 @@ if uploaded_file is not None:
     st.image(img)
     
     tags_name = get_tags(img_path)
-    ptags_name = (', '.join(tags_name))
+    tags_name = (', '.join(tags_name))
     st.markdown('**Detected content tag(s)**')
     st.markdown(f'> {tags_name}')
