@@ -43,9 +43,7 @@ st.title("物体検出App")
 uploaded_file = st.file_uploader('Please choose an image...', type={'jpg','png'})
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    img_path = f'uwatude\\apptest\\main\\img\\{uploaded_file.name}'
-    img.save(img_path)
-    objects = detect_objects(img_path)
+
 
     # 描画
     draw = ImageDraw.Draw(img)
