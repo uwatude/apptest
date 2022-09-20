@@ -40,10 +40,12 @@ from PIL import ImageFont
 
 st.title("物体検出App")
 
-uploaded_file = st.file_uploader('Please choose an image...', type={'jpg','png'})
+uploaded_file = st.file_uploader('Please choose an image...', type={'jpg','png','jpeg'})
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-
+    img_path = f'C:\\Users\\Shota Uwabo\\Desktop\\python\\新しいフォルダー\\img\\{uploaded_file.name}'
+    img.save(img_path)
+    objects = detect_objects(img_path)
 
     # 描画
     draw = ImageDraw.Draw(img)
@@ -56,7 +58,7 @@ if uploaded_file is not None:
 
     
 
-        draw.rectangle([(x,y), (x+w, y+h)], fill=None, outline='orange', width=9)
+        draw.rectangle([(x,y), (x+w, y+h)], fill=None, outline='red', width=8)
 
     
     st.image(img)
