@@ -73,4 +73,12 @@ if input_data is not None:
         'Please select the speaker',
         ('Neutral', 'Male', 'Female')
    
-
+    st.markdown('### 音声合成')
+    st.write('Okay to proceed?')
+    if st.button('Play♪'):
+        comment = st.empty()
+        comment.write('Start Playing')
+        response = synthesize_speech(input_data, lang=lang, gender=gender)
+        ##音声再生↓
+        st.audio(response.audio_content)
+        comment.write('Completed!!')
