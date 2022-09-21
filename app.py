@@ -73,7 +73,7 @@ if input_data is not None:
         'Please select the speaker',
         ('Neutral', 'Male', 'Female')
    
-    st.markdown('### 音声合成'):
+    st.markdown('### 音声合成')
     st.write('Okay to proceed?')
     if st.button('Play♪'):
         comment = st.empty()
