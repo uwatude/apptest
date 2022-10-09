@@ -72,8 +72,7 @@ if input_data is not None:
     gender = st.selectbox(
         'Please select the speaker',
         ('Neutral', 'Male', 'Female')
-   
-    st.markdown
+
     st.write('Okay to proceed?')
     if st.button('Play♪'):
         comment = st.empty()
