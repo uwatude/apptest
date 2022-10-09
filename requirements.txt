@@ -1,1 +1,3 @@
-##streamlit==1.12.2
+streamlit
+os
+io
