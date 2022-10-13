@@ -4,7 +4,7 @@ from google.cloud import texttospeech
 import io
 import streamlit as st
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'C:\\Users\\Shota Uwabo\\secret.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'https://webhosting-udemyyy.s3.ap-northeast-1.amazonaws.com/secret.json'
 
 def synthesize_speech(text, lang='English', gender='Neutral'):
   gender_type = {
