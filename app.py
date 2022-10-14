@@ -4,7 +4,7 @@ from google.cloud import texttospeech
 import io
 import streamlit as st
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'secret.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'C:\\Users\\Shota Uwabo\\Audio_app\\secret.json'
 
 def synthesize_speech(text, lang='English', gender='Neutral'):
   gender_type = {
@@ -15,7 +15,8 @@ def synthesize_speech(text, lang='English', gender='Neutral'):
   
   lang_code = {
       'English': 'en-US',
-      '日本語': 'ja-JP'
+      '日本語': 'ja-JP',
+      'español': 'es-PE'
   }
   
   #lang = 'English'
@@ -46,7 +47,7 @@ st.title('Audio Output App')
 st.markdown('### データ準備')
 
 input_option = st.selectbox(
-    'Select input data',
+    'Please select input data',
     ('Input directly', 'Text file')
 )
 input_data = None
@@ -60,14 +61,14 @@ else:
         input_data = content.decode() 
         
 if input_data is not None:
-    st.write('入力されたデータ')
+    st.write('↓入力されたデータ')
     st.write(input_data)
     st.markdown('### パラーメータ設定')
-    st.subheader('Language & Speaker setting')
+    st.subheader('Language & Speaker settings')
 
     lang = st.selectbox(
         'Please select the language',
-        ('日本語','English')
+        ('日本語','English','español')
     )
     gender = st.selectbox(
         'Please select the speaker',
