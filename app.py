@@ -16,7 +16,8 @@ def synthesize_speech(text, lang='English', gender='Neutral'):
   lang_code = {
       'English': 'en-US',
       '日本語': 'ja-JP',
-      'Español': 'es-PE'
+      'español': 'es-PE',
+      '中文' :'zh-TW'
   }
   
   #lang = 'English'
@@ -68,7 +69,7 @@ if input_data is not None:
 
     lang = st.selectbox(
         'Please select the language',
-        ('日本語','English','Español')
+        ('日本語','English','español','中文')
     )
     gender = st.selectbox(
         'Please select the speaker',
