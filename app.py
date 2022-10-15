@@ -69,7 +69,7 @@ if input_data is not None:
 
     lang = st.selectbox(
         'Please select the language',
-        ('日本語','English','español','中文')
+        ('日本語','English','spañol','中文')
     )
     gender = st.selectbox(
         'Please select the speaker',
