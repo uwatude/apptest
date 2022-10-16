@@ -16,7 +16,7 @@ def synthesize_speech(text, lang='English', gender='Neutral'):
   lang_code = {
       'English': 'en-US',
       '日本語': 'ja-JP',
-      'spañol': 'es-PE',
+      'Español': 'es-PE',
       '中文' :'zh-TW'
   }
   
