@@ -54,7 +54,7 @@ input_option = st.selectbox(
 input_data = None
 
 if input_option == 'Input directly':
-    input_data = st.text_area('Please input text here.', 'Hello, this is for testing.')
+    input_data = st.text_area('Please input text here.', '1 2 3')
 else:
     uploaded_file = st.file_uploader('Please upload a text file.', ['txt'])
     if uploaded_file is not None:
