@@ -68,7 +68,7 @@ if input_data is not None:
     st.subheader('Language & Speaker settings')
 
     lang = st.selectbox(
-        'Please select the language'
+        'Please select the language',
          '(日本語,English,Español or 中文)',
         ('日本語','English','Español','中文')
     )
