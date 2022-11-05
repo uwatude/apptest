@@ -83,4 +83,4 @@ if input_data is not None:
         response = synthesize_speech(input_data, lang=lang, gender=gender)
         ##音声再生↓
         st.audio(response.audio_content)
-        comment.write('Completed!!')
+        comment.write('Completed!! Please press a button below.')
