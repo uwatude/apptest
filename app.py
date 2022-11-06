@@ -78,8 +78,6 @@ if input_data is not None:
     st.markdown('### 音声合成')
     st.write('Okay to proceed?')
     if st.button('Play♪'):
-          background-color: #0099ff;
-    　　　color:#ffffff;
         comment = st.empty()
         comment.write('Start Playing')
         response = synthesize_speech(input_data, lang=lang, gender=gender)
