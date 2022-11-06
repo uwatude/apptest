@@ -43,7 +43,7 @@ def synthesize_speech(text, lang='English', gender='Neutral'):
   )
   return response
 
-st.title('Audio Output App')
+st.title('Audio Output App🎨')
 
 st.markdown('### データ準備')
 
