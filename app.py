@@ -91,7 +91,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://wallpapercave.com/dwp1x/wp2097026.jpg");
+             background-image: url("https://img.freepik.com/free-photo/white-baby-breath-s-flower-border-blue-background-with-copy-space-writing-text_23-2148048520.jpg?w=740&t=st=1667745546~exp=1667746146~hmac=a0dd46402ef393ed68de872779ba11f943aae3c87990ec60f4a868dd9e8cc4ab");
              background-attachment: fixed;
              background-size: cover
          }}
