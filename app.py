@@ -64,7 +64,7 @@ else:
 if input_data is not None:
     st.write('↓入力されたデータ')
     st.write(input_data)
-    st.markdown('### パラーメータ設定')
+    st.markdown('### パラーメータ設定🖼')
     st.subheader('Language & Speaker settings')
 
     lang = st.selectbox(
