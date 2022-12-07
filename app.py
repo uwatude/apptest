@@ -6,6 +6,18 @@ import streamlit as st
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'secret.json'
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-932YHVPFWQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-932YHVPFWQ');
+</script>
+
+
 def synthesize_speech(text, lang='English', gender='Neutral'):
   gender_type = {
       'Male':texttospeech.SsmlVoiceGender.MALE,
