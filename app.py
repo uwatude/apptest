@@ -9,7 +9,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'secret.json'
 
 def synthesize_speech(text, lang='English', gender='Neutral'):
   gender_type = {
-      'Male':texttospeech.SsmlVoiceGender.MALE,
+      'Male':texttospeech.SsmlVoiceGender.OggOpus,
       'Female':texttospeech.SsmlVoiceGender.FEMALE,
       'Neutral':texttospeech.SsmlVoiceGender.NEUTRAL
   }
@@ -46,7 +46,7 @@ def synthesize_speech(text, lang='English', gender='Neutral'):
 
 st.title('Audio Output App🎨')
 
-st.markdown('### データ準備#')
+st.markdown('### データ準備')
 
 input_option = st.selectbox(
     'Please select input data',
