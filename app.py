@@ -9,7 +9,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'secret.json'
 
 def synthesize_speech(text, lang='English', gender='Neutral'):
   gender_type = {
-      'Male':texttospeech.SsmlVoiceGender.OggOpus,
+      'Male':texttospeech.SsmlVoiceGender.MALE,
       'Female':texttospeech.SsmlVoiceGender.FEMALE,
       'Neutral':texttospeech.SsmlVoiceGender.NEUTRAL
   }
