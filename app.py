@@ -46,7 +46,7 @@ def synthesize_speech(text, lang='English', gender='Neutral'):
 
 st.title('Audio Output App🎨')
 
-st.markdown('### データ準備')
+st.markdown('### データ準備#')
 
 input_option = st.selectbox(
     'Please select input data',
